@@ -1,0 +1,8 @@
+{
+  "carpet.category.LAB": "LAB",
+
+  "carpet.rule.hoppersDontStackShulkers.desc": "Prevents hoppers from stacking shulkers.",
+  "carpet.rule.hoppersDontStackShulkers.extra.0": "Only works when rule `stackableShulkerBoxes` is enabled.",
+  "carpet.rule.hoppersDontStackShulkers.extra.1": "Also affects droppers and such as an unavoidable side effect.",
+  "carpet.rule.hoppersDontStackShulkers.extra.2": "(they reuse hopper code)"
+}
