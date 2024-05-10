@@ -22,6 +22,7 @@
       "carpetlabaddition.CarpetLABAdditionServer"
     ]
   },
+  "accessWidener": "carpet-lab-addition.accesswidener",
   "mixins": [
     "carpet-lab-addition.mixins.json"
   ],
