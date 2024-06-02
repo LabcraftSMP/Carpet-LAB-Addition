@@ -1,4 +1,3 @@
 accessWidener v2 named
-accessible method net/minecraft/block/entity/HopperBlockEntity isInventoryFull (Lnet/minecraft/inventory/Inventory;Lnet/minecraft/util/math/Direction;)Z
-accessible method net/minecraft/block/entity/HopperBlockEntity getAvailableSlots (Lnet/minecraft/inventory/Inventory;Lnet/minecraft/util/math/Direction;)[I
-accessible method net/minecraft/block/entity/HopperBlockEntity extract (Lnet/minecraft/block/entity/Hopper;Lnet/minecraft/inventory/Inventory;ILnet/minecraft/util/math/Direction;)Z
+
+

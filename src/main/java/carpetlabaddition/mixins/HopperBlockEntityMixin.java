@@ -1,6 +1,6 @@
 package carpetlabaddition.mixins;
 
-import carpetlabaddition.CarpetLABAdditionSettings;
+import carpetlabaddition.LABSettings;
 import net.minecraft.block.ShulkerBoxBlock;
 import net.minecraft.block.entity.HopperBlockEntity;
 import net.minecraft.item.BlockItem;
@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class HopperBlockEntityMixin {
     @Unique
     private static int getLABMaxCount(ItemStack itemStack) {
-        if (CarpetLABAdditionSettings.hoppersDontStackShulkers
+        if (LABSettings.hoppersDontStackShulkers
             && itemStack.getItem() instanceof BlockItem blockItem
             && blockItem.getBlock() instanceof ShulkerBoxBlock
         ) {
@@ -37,7 +37,7 @@ public abstract class HopperBlockEntityMixin {
 
     @Inject(method = "canMergeItems", at = @At("HEAD"), cancellable = true)
     private static void canMergeItemsLAB(ItemStack first, ItemStack second, CallbackInfoReturnable<Boolean> cir) {
-        if (CarpetLABAdditionSettings.hoppersDontStackShulkers && ((
+        if (LABSettings.hoppersDontStackShulkers && ((
             first.getItem() instanceof BlockItem firstBlock
             && firstBlock.getBlock() instanceof ShulkerBoxBlock
         ) || (

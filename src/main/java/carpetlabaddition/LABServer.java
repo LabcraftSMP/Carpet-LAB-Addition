@@ -7,24 +7,25 @@ import net.fabricmc.api.ModInitializer;
 
 import java.util.Map;
 
-public class CarpetLABAdditionServer implements CarpetExtension, ModInitializer {
+public class LABServer implements CarpetExtension, ModInitializer {
     @Override
     public String version() {
         return "carpet-lab-addition";
     }
 
     public static void loadExtension() {
-        CarpetServer.manageExtension(new CarpetLABAdditionServer());
+        CarpetServer.manageExtension(new LABServer());
     }
 
     @Override
     public void onInitialize() {
-        CarpetLABAdditionServer.loadExtension();
+        LABServer.loadExtension();
     }
 
     @Override
     public void onGameStarted() {
-        CarpetServer.settingsManager.parseSettingsClass(CarpetLABAdditionSettings.class);
+        LABEvents.noop();
+        CarpetServer.settingsManager.parseSettingsClass(LABSettings.class);
     }
 
     @Override

@@ -4,7 +4,7 @@ import carpet.api.settings.Rule;
 
 import static carpet.api.settings.RuleCategory.*;
 
-public class CarpetLABAdditionSettings {
+public class LABSettings {
     public static final String LAB = "LAB";
 
     @Rule(categories = {LAB, FEATURE})
