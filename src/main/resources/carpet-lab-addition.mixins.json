@@ -3,7 +3,8 @@
   "package": "carpetlabaddition.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "HopperBlockEntityMixin"
+    "HopperBlockEntityMixin",
+    "ScreenHandlerMixin"
   ],
   "client": [
   ],
