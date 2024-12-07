@@ -2,6 +2,7 @@ package carpetlabaddition.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.Strictness;
 import com.google.gson.reflect.TypeToken;
 import org.apache.commons.io.IOUtils;
 
@@ -25,7 +26,7 @@ public class CarpetLABAdditionTranslations {
         } catch (IOException e) {
             return Collections.emptyMap();
         }
-        Gson gson = new GsonBuilder().setLenient().create(); // lenient allows for comments
+        Gson gson = new GsonBuilder().setStrictness(Strictness.LENIENT).create(); // lenient allows for comments
         return gson.fromJson(jsonData, new TypeToken<Map<String, String>>() {}.getType());
     }
 }
