@@ -1,10 +1,8 @@
 {
   "required": true,
   "package": "carpetlabaddition.mixins",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_${java_version}",
   "mixins": [
-    "HopperBlockEntityMixin",
-    "ScreenHandlerMixin",
     "ServerPlayNetworkHandlerMixin"
   ],
   "client": [
