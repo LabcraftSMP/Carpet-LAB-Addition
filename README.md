@@ -19,5 +19,5 @@ Scarpet events:
 Scarpet functions:
 
 `encode_snbt(expr, force?)`
-- Essentially the same as encode_nbt(expr, force?) except it doesn't error in 1.20.5+
+- Essentially the same as `encode_nbt(expr, force?)`, except it doesn't error in 1.20.5+
 - This is done by allowing heterogeneous lists, to bring it in line with vanilla's [new NBT format](https://minecraft.wiki/w/Java_Edition_1.21.5#Changes_2)
