@@ -22,9 +22,8 @@ public abstract class ServerPlayNetworkHandlerMixin {
 
     @Inject(method = "handleDecoratedMessage", cancellable = true, at = @At("HEAD"))
     public void interceptChatMessageLAB(SignedMessage message, CallbackInfo ci) {
-        if (PLAYER_MESSAGE_BROADCAST.onPlayerMessageBroadcast(player, message.getContent())) {
+        if (PLAYER_MESSAGE_BROADCAST.onPlayerMessageBroadcast(player, message.getContent()))
             ci.cancel();
-        }
     }
 
     @Inject(method = "onSignUpdate", at = @At(

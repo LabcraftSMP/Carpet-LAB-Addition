@@ -2,6 +2,7 @@ package carpetlabaddition;
 
 import carpet.CarpetExtension;
 import carpet.CarpetServer;
+import carpet.script.annotation.AnnotationParser;
 import carpetlabaddition.utils.CarpetLABAdditionTranslations;
 import net.fabricmc.api.ModInitializer;
 
@@ -26,6 +27,7 @@ public class LABServer implements CarpetExtension, ModInitializer {
     public void onGameStarted() {
         LABEvents.noop();
         CarpetServer.settingsManager.parseSettingsClass(LABSettings.class);
+        AnnotationParser.parseFunctionClass(LABFunctions.class);
     }
 
     @Override

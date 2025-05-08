@@ -17,8 +17,6 @@ public class LABEvents extends Event {
         super(name, reqArgs, isGlobalOnly);
     }
 
-
-
     public boolean onPlayerMessageBroadcast(ServerPlayerEntity player, Text message) { return false; }
     public static final LABEvents PLAYER_MESSAGE_BROADCAST = new LABEvents("player_message_broadcast", 2, false) {
         public boolean onPlayerMessageBroadcast(ServerPlayerEntity player, Text message) {
