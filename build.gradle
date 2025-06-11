@@ -1,6 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT'
-	id 'maven-publish'
+	id 'fabric-loom' version '1.10-SNAPSHOT'
 }
 
 loom {
@@ -25,7 +24,7 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "carpet:fabric-carpet:${project.minecraft_version}-${project.carpet_core_version}+v${project.carpet_core_build}"
+	modImplementation "carpet:fabric-carpet:${project.carpet_minecraft_version}-${project.carpet_core_version}+v${project.carpet_core_build}"
 }
 
 processResources {
@@ -82,22 +81,4 @@ java {
 
 	sourceCompatibility = "VERSION_${project.java_version}" as JavaVersion
 	targetCompatibility = "VERSION_${project.java_version}" as JavaVersion
-}
-
-// configure the maven publication
-publishing {
-	publications {
-		create("mavenJava", MavenPublication) {
-			artifactId = project.archives_base_name
-			from components.java
-		}
-	}
-
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
-	}
 }
