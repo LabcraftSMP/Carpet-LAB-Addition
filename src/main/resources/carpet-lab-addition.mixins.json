@@ -3,7 +3,7 @@
   "package": "carpetlabaddition.mixins",
   "compatibilityLevel": "JAVA_${java_version}",
   "mixins": [
-    "ServerPlayNetworkHandlerMixin"
+    "ServerGamePacketListenerImplMixin"
   ],
   "client": [
   ],

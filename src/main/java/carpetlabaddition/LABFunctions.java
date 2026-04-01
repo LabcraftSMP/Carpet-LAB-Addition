@@ -7,14 +7,14 @@ import carpet.script.exception.InternalExpressionException;
 import carpet.script.value.NBTSerializableValue;
 import carpet.script.value.Value;
 import carpetlabaddition.utils.ScarpetMethodReroutes;
-import net.minecraft.nbt.NbtElement;
+import net.minecraft.nbt.Tag;
 
 @SuppressWarnings("unused")
 public class LABFunctions {
     @ScarpetFunction(maxParams = 2)
     public NBTSerializableValue encode_snbt(Context context, Value input, boolean... force) {
         boolean shouldForce = force != null && force.length == 1 && force[0];
-        NbtElement tag;
+        Tag tag;
         
         try {
             tag = ScarpetMethodReroutes.valueToTag(input, shouldForce, ((CarpetContext) context).registryAccess());

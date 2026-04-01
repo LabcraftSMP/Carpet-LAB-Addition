@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "${mod_id}",
   "version": "${mod_version}",
-
   "name": "${mod_name}",
   "description": "${mod_desc}",
   "authors": [ ${mod_authors} ],
@@ -21,16 +20,14 @@
       "carpetlabaddition.LABServer"
     ]
   },
-  "accessWidener": "carpet-lab-addition.accesswidener",
   "mixins": [
     "carpet-lab-addition.mixins.json"
   ],
 
   "depends": {
-    "minecraft": "~${minecraft_version}",
-    "fabricloader": ">=${loader_version}",
-    "carpet": ">=${carpet_version}",
-    "java": ">=${java_version}"
+    "minecraft": "^${minecraft_version}",
+    "fabricloader": ">=0.15",
+    "carpet": "*"
   },
 
   "custom": {
