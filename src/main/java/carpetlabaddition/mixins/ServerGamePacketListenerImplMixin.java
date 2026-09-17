@@ -31,10 +31,10 @@ public abstract class ServerGamePacketListenerImplMixin {
 
     @Inject(method = "updateSignText", at = @At(
             value = "INVOKE",
-            target = "Lnet/minecraft/world/level/block/entity/SignBlockEntity;updateSignText(Lnet/minecraft/world/entity/player/Player;ZLjava/util/List;)V",
+            target = "Lnet/minecraft/world/level/block/entity/SignBlockEntity;updateSignText(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/block/entity/SignTextSlot;Ljava/util/List;)V",
             shift = At.Shift.AFTER
     ))
     private void interceptSignUpdate(ServerboundSignUpdatePacket packet, List<FilteredText> lines, CallbackInfo ci) {
-        PLAYER_EDITS_SIGN.onPlayerEditsSign(player, packet.getPos());
+        PLAYER_EDITS_SIGN.onPlayerEditsSign(player, packet.pos());
     }
 }
