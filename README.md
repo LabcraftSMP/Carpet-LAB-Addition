@@ -1,6 +1,6 @@
 # Carpet LAB Addition
 
-Carpet features created for the LAB SMP, as we need them. Currently only contains features for Scarpet.
+Carpet features created for the LAB SMP, as we need them.
 
 <hr />
 
