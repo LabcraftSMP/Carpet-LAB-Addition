@@ -9,9 +9,11 @@ import net.fabricmc.api.ModInitializer;
 import java.util.Map;
 
 public class LABServer implements CarpetExtension, ModInitializer {
+    public static final String MOD_ID = "carpet-lab-addition";
+
     @Override
     public String version() {
-        return "carpet-lab-addition";
+        return MOD_ID;
     }
 
     public static void loadExtension() {

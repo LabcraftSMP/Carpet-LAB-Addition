@@ -1,3 +1,9 @@
 {
-  "carpet.category.LAB": "LAB"
+  "carpet.category.LAB": "LAB",
+  "carpet.rule.noteBlocksBroadcastSigns.desc": "Makes note blocks with signs standing on top send the sign's text in chat when triggered.",
+  "carpet.rule.noteBlocksBroadcastSigns.extra.0": "Requires the first line on the front of the sign to be a broadcast marker:",
+  "carpet.rule.noteBlocksBroadcastSigns.extra.1": "§3[BROADCAST]",
+  "carpet.rule.noteBlocksBroadcastSigns.extra.2": "The broadcast marker can optionally supply a radius between 1 & 48:",
+  "carpet.rule.noteBlocksBroadcastSigns.extra.3": "§3[BROADCAST 16]",
+  "carpet.rule.noteBlocksBroadcastSigns.extra.4": "Default broadcast radius is 24."
 }

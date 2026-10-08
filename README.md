@@ -4,7 +4,15 @@ Carpet features created for the LAB SMP, as we need them. Currently only contain
 
 <hr />
 
-Scarpet events:
+### Carpet rules
+
+`noteBlocksBroadcastSigns`
+ - Makes note blocks with signs standing on top send the sign's text in chat when triggered.
+ - Requires the first line on the front of the sign to be a broadcast marker: `[BROADCAST]`
+ - The broadcast marker can optionally supply a radius between 1 & 48: `[BROADCAST 16]`
+ - Default broadcast radius is 24.
+
+### Scarpet events
 
 `__on_player_message_broadcast(player, message)`
 - Triggers right before a player message is broadcast to the server.
@@ -16,7 +24,7 @@ Scarpet events:
 - Can be used to add custom sign formatting.
 - [Example script](https://github.com/chililisoup/Scarpet-Scripts/blob/main/world/format_sign.sc)
 
-Scarpet functions:
+### Scarpet functions
 
 `encode_snbt(expr, force?)`
 - Essentially the same as `encode_nbt(expr, force?)`, except it allows heterogeneous lists
