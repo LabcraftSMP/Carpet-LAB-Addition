@@ -9,4 +9,7 @@ public class LABSettings {
 
     @Rule(categories = {LAB, FEATURE})
     public static boolean noteBlocksBroadcastSigns = false;
+
+    @Rule(categories = {LAB, FEATURE})
+    public static boolean shulkerBoxesDoNotBreakPaintings = false;
 }

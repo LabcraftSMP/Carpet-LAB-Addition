@@ -3,6 +3,8 @@
   "package": "carpetlabaddition.mixins",
   "compatibilityLevel": "JAVA_${java_version}",
   "mixins": [
+    "BlockAttachedEntityMixin",
+    "HangingEntityMixin",
     "NoteBlockMixin",
     "ServerGamePacketListenerImplMixin"
   ],

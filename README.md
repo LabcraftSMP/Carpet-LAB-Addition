@@ -12,6 +12,9 @@ Carpet features created for the LAB SMP, as we need them.
  - The broadcast marker can optionally supply a radius between 1 & 48: `[BROADCAST 16]`
  - Default broadcast radius is 24.
 
+`shulkerBoxesDoNotBreakPaintings`
+ - Makes shulker boxes not break paintings or item frames when opening into them.
+
 ### Scarpet events
 
 `__on_player_message_broadcast(player, message)`
